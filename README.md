@@ -30,10 +30,10 @@ _[Choose one:]_
 
 ### 2.1 Steps Taken
 
-Describe briefly how you created/activated your Python environment:
+
 
 **Tool used:**  
-_[venv / conda / system Python]_
+_[conda-forge]_
 
 **Key commands you ran:**
 ```bash
