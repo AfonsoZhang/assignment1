@@ -17,7 +17,7 @@ _[macOS]_
 
 **Linux/ROS environment type:**  
 _[Choose one:]_
-- [ ] Dual-boot Ubuntu
+- [. ] Dual-boot Ubuntu
 - [ ] WSL2 Ubuntu
 - [ ] Ubuntu in VM (UTM/VirtualBox/VMware/Parallels)
 - [ ] Docker container
