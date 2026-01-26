@@ -7,16 +7,16 @@
 ## 1. System Information
 
 **Laptop model:**  
-_[MacBook Air M4]_
+_MacBook Air M4_
 
 **CPU / RAM:**  
-_[M4, 16GB RAM]_
+_M4, 16GB RAM_
 
 **Host OS:**  
-_[macOS]_
+_macOS_
 
 **Linux/ROS environment type:**  
-_[Choose one:]_
+_Choose one:_
 - [ ] Dual-boot Ubuntu
 - [ ] WSL2 Ubuntu
 - [ ] Ubuntu in VM (UTM/VirtualBox/VMware/Parallels)
@@ -33,7 +33,7 @@ _[Choose one:]_
 
 
 **Tool used:**  
-_[conda-forge]_
+_conda-forge_
 
 **Key commands you ran:**
 ```bash
@@ -44,7 +44,7 @@ ros2_base
 ```
 
 **Any deviations from the default instructions:**  
-_[None]_
+_None_
 
 ### 2.2 Test Results
 
@@ -56,7 +56,6 @@ python scripts/test_python_env.py
 
 **Output:**
 ```
-[
 ========================================
 AAE5303 Environment Check (Python + ROS)
 Goal: help you verify your environment and understand what each check means.
@@ -121,7 +120,7 @@ Step 10: Basic CLI availability
 ✅ ROS 2 runtime OK: talker and listener exchanged messages.
 ✅ Binary 'python3' found at /root/miniconda3/envs/ros_env/bin/python3
 
-All checks passed. You are ready for AAE5303 🚀]
+All checks passed. You are ready for AAE5303 🚀
 ```
 
 ```bash
@@ -130,7 +129,15 @@ python scripts/test_open3d_pointcloud.py
 
 **Output:**
 ```
-[Paste your actual terminal output here]
+ℹ️ Loading /root/PolyU-AAE5303-env-smork-test/data/sample_pointcloud.pcd ...
+✅ Loaded 8 points.
+   • Centroid: [0.025 0.025 0.025]
+   • Axis-aligned bounds: min=[0. 0. 0.], max=[0.05 0.05 0.05]
+✅ Filtered point cloud kept 7 points.
+✅ Wrote filtered copy with 7 points to /root/PolyU-AAE5303-env-smork-test/data/sample_pointcloud_copy.pcd
+   • AABB extents: [0.05 0.05 0.05]
+   • OBB  extents: [0.08164966 0.07071068 0.05773503], max dim 0.0816 m
+🎉 Open3D point cloud pipeline looks good.
 ```
 
 **Screenshot:**  
