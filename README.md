@@ -37,13 +37,12 @@ _[conda-forge]_
 
 **Key commands you ran:**
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+bash
+conda activate ros_env
 ```
 
 **Any deviations from the default instructions:**  
-_[Describe any changes you made, or write "None"]_
+_[None]_
 
 ### 2.2 Test Results
 
