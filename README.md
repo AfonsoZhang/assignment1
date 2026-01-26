@@ -33,7 +33,7 @@ _Choose one:_
 
 
 **Tool used:**  
-_conda-forge_
+_conda_
 
 **Key commands you ran:**
 ```bash
