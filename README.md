@@ -179,22 +179,28 @@ source install/setup.bash
 
 **Then run talker:**
 ```bash
-ros2 run env_check_pkg talker.py
+ros2 run env_check_pkg talker
 ```
 
 **Output (3–4 lines):**
 ```
-[Paste 3-4 lines of talker output here]
+[INFO] [1769415320.261680087] [env_check_pkg_talker]: Publishing: 'AAE5303 hello #0'
+[INFO] [1769415320.761732588] [env_check_pkg_talker]: Publishing: 'AAE5303 hello #1'
+[INFO] [1769415321.258829505] [env_check_pkg_talker]: Publishing: 'AAE5303 hello #2'
+[INFO] [1769415321.761697421] [env_check_pkg_talker]: Publishing: 'AAE5303 hello #3'
 ```
 
 **Run listener:**
 ```bash
-ros2 run env_check_pkg listener.py
+ros2 run env_check_pkg listener
 ```
 
 **Output (3–4 lines):**
 ```
-[Paste 3-4 lines of listener output here]
+[INFO] [1769415772.472540922] [env_check_pkg_listener]: I heard: 'AAE5303 hello #330'
+[INFO] [1769415772.972610630] [env_check_pkg_listener]: I heard: 'AAE5303 hello #331'
+[INFO] [1769415773.474171797] [env_check_pkg_listener]: I heard: 'AAE5303 hello #332'
+[INFO] [1769415773.969529172] [env_check_pkg_listener]: I heard: 'AAE5303 hello #333'
 ```
 
 **Alternative (using launch file):**
