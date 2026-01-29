@@ -264,7 +264,26 @@ AI assistant
 
 ---
 
+### Issue 3: ❌ ROS 2 workspace build failed (exit 1).
 
+**Cause / diagnosis:**  
+The conda environment's Python is being used instead of the system Python that has ROS 2 dependencies. 
+
+**Fix:**  
+Install ROS dependencies in conda environment
+
+```bash
+pip install catkin_pkg empy lark colcon-common-extensions
+cd ~/PolyU-AAE5303-env-smork-test/ros2_ws
+rm -rf build install log
+source /opt/ros/humble/setup.bash
+colcon build
+```
+
+**Reference:**  
+AI assistant
+
+---
 
 ## 5. Use of Generative AI (Required)
 
