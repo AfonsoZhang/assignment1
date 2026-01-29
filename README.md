@@ -37,6 +37,7 @@ _conda_
 
 **Key commands you ran:**
 ```bash
+docker exec -it ros_conda /bin/sh 
 bash
 conda activate ros_env
 cd ~/PolyU-AAE5303-env-smork-test
