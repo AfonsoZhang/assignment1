@@ -141,9 +141,9 @@ python scripts/test_open3d_pointcloud.py
 ```
 
 **Screenshot:**  
-_[Include one screenshot showing both tests passing]_
 
-![Python Tests Passing](path/to/your/screenshot.png)
+<img width="1710" height="1107" alt="smoke test" src="https://github.com/user-attachments/assets/1313dcd9-e0d5-49f4-afc6-094094dc6241" />
+
 
 ---
 
