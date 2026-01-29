@@ -217,15 +217,15 @@ _[Include one screenshot showing talker + listener running]_
 
 ## 4. Problems Encountered and How I Solved Them
 
-> **Note:** Write 2–3 issues, even if small. This section is crucial — it demonstrates understanding and problem-solving.
 
-### Issue 1: ERROR: No matching distribution found for open3d==0.19.0
+
+### Issue 1: ERROR: _No matching distribution found for open3d==0.19.0_
 
 **Cause / diagnosis:**  
-My Python version is 3.13, but Open3D only supports 3.11.
+_My Python version is 3.13, but Open3D only supports 3.11._
 
 **Fix:**  
-Install Python 3.11 in conda environment
+_Install Python 3.11 in conda environment_
 
 ```bash
 apt update
@@ -240,17 +240,17 @@ source ~/.bashrc
 ```
 
 **Reference:**  
-Classmate&AI assistant
+_Classmate&AI assistant_
 
 ---
 
-### Issue 2: CondaToSNonInteractiveError: Terms of Service have not been accepted for the following channels.
+### Issue 2: _CondaToSNonInteractiveError: Terms of Service have not been accepted for the following channels._
 
 **Cause / diagnosis:**  
-ToS
+_Anaconda's Terms of Service_
 
 **Fix:**  
-Accept Anaconda's Terms of Service before creating environments using their channels
+_Accept Anaconda's Terms of Service before creating environments using their channels_
 
 ```bash
 conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
@@ -260,17 +260,17 @@ conda create -n ros_env python=3.11 -y
 ```
 
 **Reference:**  
-AI assistant
+_AI assistant_
 
 ---
 
-### Issue 3: ❌ ROS 2 workspace build failed (exit 1).
+### Issue 3: _❌ ROS 2 workspace build failed (exit 1)._
 
 **Cause / diagnosis:**  
-The conda environment's Python is being used instead of the system Python that has ROS 2 dependencies. 
+_The conda environment's Python is being used instead of the system Python that has ROS 2 dependencies._ 
 
 **Fix:**  
-Install ROS dependencies in conda environment
+_Install ROS dependencies in conda environment_
 
 ```bash
 pip install catkin_pkg empy lark colcon-common-extensions
@@ -281,7 +281,7 @@ colcon build
 ```
 
 **Reference:**  
-AI assistant
+_AI assistant_
 
 ---
 
