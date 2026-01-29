@@ -219,56 +219,52 @@ _[Include one screenshot showing talker + listener running]_
 
 > **Note:** Write 2–3 issues, even if small. This section is crucial — it demonstrates understanding and problem-solving.
 
-### Issue 1: [Write the exact error message or problem]
+### Issue 1: ERROR: No matching distribution found for open3d==0.19.0
 
 **Cause / diagnosis:**  
-_[Explain what you think caused it]_
+My Python version is 3.13, but Open3D only supports 3.11.
 
 **Fix:**  
-_[The exact command/config change you used to solve it]_
+Install Python 3.11 in conda environment
 
 ```bash
-[Your fix command/code here]
+apt update
+apt install -y wget
+
+cd ~
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/miniconda3
+
+~/miniconda3/bin/conda init bash
+source ~/.bashrc
 ```
 
 **Reference:**  
-_[Official ROS docs? StackOverflow? AI assistant? Something else?]_
+Classmate&AI assistant
 
 ---
 
-### Issue 2: [Another real error or roadblock]
+### Issue 2: CondaToSNonInteractiveError: Terms of Service have not been accepted for the following channels.
 
 **Cause / diagnosis:**  
-_[Explain what you think caused it]_
+ToS
 
 **Fix:**  
-_[The exact command/config change you used to solve it]_
+Accept Anaconda's Terms of Service before creating environments using their channels
 
 ```bash
-[Your fix command/code here]
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+
+conda create -n ros_env python=3.11 -y
 ```
 
 **Reference:**  
-_[Official ROS docs? StackOverflow? AI assistant? Something else?]_
+AI assistant
 
 ---
 
-### Issue 3 (Optional): [Title]
 
-**Cause / diagnosis:**  
-_[Explain what you think caused it]_
-
-**Fix:**  
-_[The exact command/config change you used to solve it]_
-
-```bash
-[Your fix command/code here]
-```
-
-**Reference:**  
-_[Official ROS docs? StackOverflow? AI assistant? Something else?]_
-
----
 
 ## 5. Use of Generative AI (Required)
 
