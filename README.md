@@ -288,22 +288,24 @@ _AI assistant_
 
 ## 5. Use of Generative AI (Required)
 
-Choose one of the issues above and document how you used AI to solve it.
 
-> **Goal:** Show critical use of AI, not blind copying.
 
 ### 5.1 Exact prompt you asked
 
 **Your prompt:**
 ```
-[Copy-paste your actual message to the AI, not a summary]
+i don't want to run:source /opt/ros/humble/setup.bash everytime when i want to run a script
 ```
 
 ### 5.2 Key helpful part of the AI's answer
 
 **AI's response (relevant part only):**
-```
-[Quote only the relevant part of the AI's answer]
+```bash
+echo '' >> ~/.bashrc
+echo '# ROS 2 Humble setup' >> ~/.bashrc
+echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
+echo 'source ~/PolyU-AAE5303-env-smork-test/ros2_ws/install/setup.bash' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ### 5.3 What you changed or ignored and why
@@ -314,18 +316,18 @@ Explain briefly:
 - Did you double-check with official docs?
 
 **Your explanation:**  
-_[Write your analysis here]_
+_Nothing unsafe; I decide to use alias instead of changing too much; I double check the code it provide and it is correct_
 
 ### 5.4 Final solution you applied
 
 Show the exact command or file edit that fixed the problem:
 
 ```bash
-[Your final command/code here]
+echo 'alias ros2_base="source /opt/ros/humble/setup.bash"' >> ~/.bashrc
 ```
 
 **Why this worked:**  
-_[Brief explanation]_
+_Nothing needed to explain_
 
 ---
 
@@ -340,7 +342,7 @@ Short but thoughtful:
 
 **Your reflection:**
 
-_[Write your 3-5 sentence reflection here]_
+_ROS 2 requires proper environment sourcing (source /opt/ros/humble/setup.bash) before building or running nodes; ROS 2 executables don't use file extensions (e.g., ros2 run env_check_pkg talker, not talker.py); Read error logs carefully - the ModuleNotFoundError: No module named 'catkin_pkg' clearly pointed to a Python environment issue; More confident in reading build errors and identifying environment issues_
 
 ---
 
@@ -363,13 +365,13 @@ _01/30/2026_
 
 Before submitting, ensure you have:
 
-- [ ] Filled in all system information
-- [ ] Included actual terminal outputs (not just screenshots)
-- [ ] Provided at least 2 screenshots (Python tests + ROS talker/listener)
-- [ ] Documented 2–3 real problems with solutions
-- [ ] Completed the AI usage section with exact prompts
-- [ ] Written a thoughtful reflection (3–5 sentences)
-- [ ] Signed the declaration
+- [x] Filled in all system information
+- [x] Included actual terminal outputs (not just screenshots)
+- [x] Provided at least 2 screenshots (Python tests + ROS talker/listener)
+- [x] Documented 2–3 real problems with solutions
+- [x] Completed the AI usage section with exact prompts
+- [x] Written a thoughtful reflection (3–5 sentences)
+- [x] Signed the declaration
 
 ---
 
