@@ -349,13 +349,13 @@ _[Write your 3-5 sentence reflection here]_
 ✅ **I confirm that I performed this setup myself and all screenshots/logs reflect my own environment.**
 
 **Name:**  
-_[Your name]_
+_ZHANG Shuyang_
 
 **Student ID:**  
-_[Your student ID]_
+_25049993G_
 
 **Date:**  
-_[Date of submission]_
+_01/30/2026_
 
 ---
 
