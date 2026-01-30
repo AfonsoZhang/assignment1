@@ -211,9 +211,8 @@ ros2 launch env_check_pkg env_check.launch.py
 ```
 
 **Screenshot:**  
-_[Include one screenshot showing talker + listener running]_
+<img width="1710" height="1107" alt="talker listener test" src="https://github.com/user-attachments/assets/16166882-9cbb-4882-afec-b41b6b7de37e" />
 
-![Talker and Listener Running](path/to/your/screenshot.png)
 
 ---
 
