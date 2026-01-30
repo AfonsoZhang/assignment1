@@ -144,6 +144,7 @@ python scripts/test_open3d_pointcloud.py
 **Screenshot:**  
 
 <img width="1710" height="1107" alt="smoke test" src="https://github.com/user-attachments/assets/1313dcd9-e0d5-49f4-afc6-094094dc6241" />
+<img width="1710" height="1107" alt="open3d test" src="https://github.com/user-attachments/assets/1f42f1b1-6640-47bc-9049-12f87ee36594" />
 
 
 ---
